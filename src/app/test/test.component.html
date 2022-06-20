@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up </title>
+  </head>
+  <body>
+
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+    
+      <form  #regForm="ngForm" [formGroup]="registerForm" >
+        
+        <br>
+        <br>
+      
+        <label>Email</label>
+        <input type="email"  placeholder="Enter username or email"  id="email" name="email" email="true"/>
+ 
+
+        <label>Password</label>
+        <input type="password"  placeholder="Enter password"  id="password" name="password"  />
+
+        <ckeditor
+        >
+          <ckbutton [name]="'saveButton'"
+            [command]="'saveCmd'"
+            
+            [icon]="'save.png'"
+            [label]="'Save Document'"
+            [toolbar]="'clipboard,1'">
+          </ckbutton>
+      </ckeditor>              
+                
+        <button type="submit" class="signUP-btn"  >Submit</button>
+      </form>
+
+     <p>
+        Already have an account? <a href="user-login">Login here</a>
+      </p>
+    </div>
+
+  </body>
+</html>

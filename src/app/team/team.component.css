@@ -1,0 +1,78 @@
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.form
+{
+    position: relative;
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    left: 2%;
+    margin-top: 300px;
+    font-size: 20px;
+    
+}  
+.form-field
+{   
+    width: 100%;
+}
+textarea .description
+{
+    width: 30%;
+    height: 100%;
+}
+.title h1{
+    position: relative;
+    left: 12%;
+    margin-top: 50px;
+    font-size: 35px;
+}
+.card{
+    position: relative;
+    left: 8%;
+    width: 100%;
+    height: 650px;
+}
+.btn-upload{
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    background-color: rgb(226, 224, 224);
+    font-size: 21px;
+    box-shadow:black;
+    border: 2px solid gray ;
+
+}
+.file {
+    display: grid;
+    justify-content: space-between;
+}
+.file h2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+.file input {
+    width: 100%;
+    height: 100%;
+}
+.form-content {
+    position: absolute;
+    width: 100%;
+}
+table {
+   width: 70%;
+   position: relative;
+   left: 20%;
+   margin-top: 100px;
+}
+.demo-button-container {
+    position: absolute;
+    padding-top: 20px;
+    right: 10%;
+} */

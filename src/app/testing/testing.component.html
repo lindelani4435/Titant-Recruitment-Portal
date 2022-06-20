@@ -1,0 +1,13 @@
+<form  [formGroup]="registerForm"  (ngSubmit)="clickhandle()">
+
+    <label>Name</label>
+    <input formControlName="name" class="name" placeholder="Enter your full names"  id="names">
+    <br>
+    <label>Last</label>
+    <input formControlName="lname" class="name" placeholder="Enter your last name"  id="lname">
+
+    <button >Submit</button>
+
+        <p>{{"This is the form values "+registerForm.value}}</p>
+
+</form>

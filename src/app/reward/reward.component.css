@@ -1,0 +1,544 @@
+/* @media only screen and (max-width: 600px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+  nav img{
+    width: 35px;
+    margin-left: -80px;
+    margin-top: 2px;
+  }
+  .nav-links
+  {
+    display: none;
+  }
+  
+  .nav-links ul li{
+    display: block;
+    padding: 5px;
+  
+  }
+  .nav-links{
+    position: absolute;
+    background: #003782;
+    color:#fff;
+    height: 70vh;
+    width: 200px;
+    top:0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+  
+  nav .las{
+    display: block;
+    color: #e6b012;
+    margin: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .nav-links h1{
+  
+    color: #003782;
+    margin-top: -47px;
+    position: relative;
+    left: -22%;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .nav-links ul li a{
+  
+      text-decoration: none;
+      color: #fff;
+      font-size: 17px;
+      padding: 8px 12px;
+  }
+  .the-main{
+    width: 100%;
+    height: 45vh;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.863) 0%,rgba(0, 0, 255, 0.822) 0%,rgba(255, 0, 0, 0.822) 100%),url(annouce-pic1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hori-line{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 15%;
+  
+  }
+  .hori-line1{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 68%;
+    left: 85%;
+  
+  }
+  .the-head h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003782;
+    margin-top: 30px;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: 70px;
+  }
+  
+  .click p{
+    margin-top: 15px;
+    color: #003782;
+  }
+  }
+  @media only screen and (min-width: 600px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+    .nav-links{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  nav img{
+    width: 70px;
+    margin-left: -180px;
+    margin-top: 5px;
+  }
+  .nav-links ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: -28%;
+  
+  }
+  .nav-links h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    left: -8%;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
+  }
+  .the-main{
+    width: 100%;
+    height: 45vh;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.863) 0%,rgba(0, 0, 255, 0.822) 0%,rgba(255, 0, 0, 0.822) 100%),url(annouce-pic1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hori-line{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 30%;
+  
+  }
+  .hori-line1{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 70%;
+  
+  }
+  .the-head h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003782;
+    margin-top: 30px;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 70px;
+  }
+  
+  .click p{
+    margin-top: 15px;
+    color: #003782;
+  }
+  
+  
+  }
+  @media only screen and (min-width: 768px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+    .nav-links{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  nav img{
+    width: 60px;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .nav-links ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: 2%;
+  
+  }
+  .nav-links h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    left: 1%;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+      font-size: 13px;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
+  }
+  .the-main{
+    width: 100%;
+    height: 45vh;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.863) 0%,rgba(0, 0, 255, 0.822) 0%,rgba(255, 0, 0, 0.822) 100%),url(annouce-pic1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hori-line{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 84%;
+    left: 20%;
+  
+  }
+  .hori-line1{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    left: 80%;
+  
+  }
+  .the-head h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003782;
+    margin-top: 30px;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 70px;
+  }
+  
+  .click p{
+    margin-top: 15px;
+    color: #003782;
+  }
+  
+  }
+  @media only screen and (min-width: 992px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+    .nav-links{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  nav img{
+    width: 70px;
+    margin-left: -140px;
+    margin-top: 5px;
+  }
+  .nav-links ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: -28%;
+  
+  }
+  .nav-links h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    left: -6%;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
+  }
+  .the-main{
+    width: 100%;
+    height: 45vh;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.863) 0%,rgba(0, 0, 255, 0.822) 0%,rgba(255, 0, 0, 0.822) 100%),url(annouce-pic1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hori-line{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    left: 25%;
+  
+  }
+  .hori-line1{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 82%;
+    left: 75%;
+  
+  }
+  .the-head h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003782;
+    margin-top: 30px;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 70px;
+  }
+  
+  .click p{
+    margin-top: 15px;
+    color: #003782;
+  }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    *{ margin: 0;
+      padding: 0;
+    }
+    .nav-links{
+      display: flex;
+      justify-content:center ;
+      align-items: right;
+      background: #fff;
+      position: sticky;
+      top: 0;
+  
+  }
+  nav img{
+    width: 72px;
+    margin-left: -170px;
+    margin-top: 5px;
+  }
+  .nav-links ul{
+      display: flex;
+      list-style: none;
+      margin: 20px 0px;
+  }
+  .nav-links ul li{
+      font-family: Arial;
+      font-size: 18px;
+      position: relative;
+      right: -25%;
+  
+  }
+  .nav-links h1{
+    color: #003782;
+    margin-top: 15px;
+    position: relative;
+    left: -6%;
+    font-size: 24px;
+  }
+  .nav-links ul li a{
+      text-decoration: none;
+      color: #003782;
+      padding: 8px 12px;
+      transition: all .5s ease;
+      font-size: 19px;
+  }
+  .nav-links ul li a:hover{
+      background-color: #003782;
+      border-radius: 3px;
+      color: #fff;
+  
+  }
+  .the-main{
+    width: 100%;
+    height: 45vh;
+    background-image:linear-gradient(to right,rgba(0, 0, 255, 0.863) 0%,rgba(0, 0, 255, 0.822) 0%,rgba(255, 0, 0, 0.822) 100%),url(annouce-pic1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .hori-line{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 30%;
+  
+  }
+  .hori-line1{
+    width: 10%;
+    height: 2px;
+    background-color: #ce1127;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 70%;
+  
+  }
+  .the-head h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: #003782;
+    margin-top: 30px;
+  
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 70px;
+  }
+  
+  .click p{
+    margin-top: 15px;
+    color: #003782;
+  }
+  
+  }
+  @media (min-width:1920px)
+{
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links{
+    display: flex;
+    justify-content:center ;
+    align-items: right;
+    background: #fff;
+    position: sticky;
+    top: 0;
+
+}
+nav img{
+  width: 70px;
+  margin-left: -540px;
+  margin-top: 5px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav-links ul li{
+    font-family: Arial;
+    font-size: 18px;
+    position: relative;
+    right: -28%;
+
+}
+.nav-links h1{
+  color: #003782;
+  margin-top: 15px;
+  position: relative;
+  left: -22%;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #003782;
+    padding: 8px 12px;
+    transition: all .5s ease;
+}
+.nav-links ul li a:hover{
+    background-color: #003782;
+    border-radius: 3px;
+    color: #fff;
+
+}
+} */

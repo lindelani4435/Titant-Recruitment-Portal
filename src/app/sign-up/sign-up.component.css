@@ -1,0 +1,224 @@
+@media (min-width:1920px){
+    body {
+      background-color: white;
+      font-family: "Roboto", sans-serif;
+      height: 140vh;
+      width: 100%;
+      }
+    
+      .signup-box {
+      width: 600px;
+      height: 880px;
+      margin: auto;
+      background-color:rgba(0, 60, 139, 0.904);
+      border-radius: 3px;
+      margin-top: 110px;
+      }
+    
+    
+    
+      h1 {
+      text-align: center;
+      padding-top: 15px;
+      color : rgb(255, 196, 0);
+    
+      }
+    
+      h4 {
+      text-align: center;
+      color:white;
+    
+      }
+    
+      label {
+    
+        color:white;
+    
+     }
+     span label{
+        margin-left: 1px;
+        font-weight: 500;
+     }
+    
+      form {
+      width: 300px;
+      margin-left: 20px;
+      }
+    
+      form label {
+      display: flex;
+      margin-top: 15px;
+      font-size: 16px;
+      color:white;
+      }
+      select{
+        width: 50%;
+        height: 30px;
+      }
+      form input {
+      width: 150%;
+      height: 30px;
+      padding: 7px;
+      border: none;
+      border: 1px solid gray;
+      border-radius: 6px;
+      outline: none;
+      }
+      .signUP-btn{
+        margin-top: 15px;
+        margin-left: 500px;
+        width: 70%;
+        display: block;
+        outline: none;
+        padding: 10px 0;
+        border:none;
+        cursor: pointer;
+        background: #ff0000;
+        color:#fff;
+        font-size: 15px;
+    
+      }
+      .signUP-btn:hover{
+        background: #c40101;
+        
+       }
+     select #User{
+       position: relative;
+       right: 300%;
+     }
+      p {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 15px;
+      color:white;
+    
+    
+      }
+      a{
+        color:rgb(255, 196, 0);
+      }
+    
+  
+  .alert
+  {
+    color: rgb(245, 17, 17);
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  }
+  
+  @media (min-width:1281px){
+    body {
+      background-color: white;
+      font-family: "Roboto", sans-serif;
+      height: 140vh;
+      width: 100%;
+      }
+    
+      .signup-box {
+      width: 600px;
+      height: 880px;
+      margin: auto;
+      background-color:rgba(0, 60, 139, 0.904);
+      border-radius: 3px;
+      margin-top: 110px;
+      }
+    
+    
+    
+      h1 {
+      text-align: center;
+      padding-top: 15px;
+      color : rgb(255, 196, 0);
+    
+      }
+    
+      h4 {
+      text-align: center;
+      color:white;
+    
+      }
+    
+      label {
+    
+        color:white;
+    
+     }
+     span label{
+        margin-left: 1px;
+        font-weight: 500;
+     }
+    
+      form {
+      width: 300px;
+      margin-left: 20px;
+      }
+    
+      form label {
+      display: flex;
+      margin-top: 15px;
+      font-size: 16px;
+      color:white;
+      }
+      select{
+        width: 50%;
+        height: 30px;
+      }
+      form input {
+      width: 150%;
+      height: 30px;
+      padding: 7px;
+      border: none;
+      border: 1px solid gray;
+      border-radius: 6px;
+      outline: none;
+      }
+      .signUP-btn{
+        margin-top: 15px;
+        margin-left: 160px;
+        width: 70%;
+        display: block;
+        outline: none;
+        padding: 10px 0;
+        border:none;
+        cursor: pointer;
+        background: #ff0000;
+        color:#fff;
+        font-size: 15px;
+    
+      }
+      .signUP-btn:hover{
+        background: #c40101;
+       }
+     select #User{
+       position: relative;
+       right: 300%;
+     }
+      p {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 15px;
+      color:white;
+    
+    
+      }
+      a{
+        color:rgb(255, 196, 0);
+      }
+    
+  
+  .alert
+  {
+    color: rgb(245, 17, 17);
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  
+  
+  }
+  
+  
+  
+  

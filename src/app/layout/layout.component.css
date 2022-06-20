@@ -1,0 +1,226 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+  }
+  .content {
+    margin: 40px;
+    right: 15%;
+  }
+  .container-fluid{
+    width: 100%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    justify-content: space-between;
+  }
+  .col-lg-3{
+    position: relative;
+    width: 100%;
+    left: 10%;
+  }
+  .col-6{
+    flex: 0 0 25%;
+    max-width: 50%;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+  }
+  .small-box {
+    text-align:left;
+  }
+  .small-box {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    height: 125px;
+    width: 460px;
+  }
+  .bg-info {
+    color: #fff!important;
+  }
+  .bg-info {
+    background-color: #ce1127!important;
+  }
+  .small-box .inner {
+    padding: 10px;
+  }
+  .small-box h1,
+  .small-box p {
+    z-index: 5;
+  }
+  .small-box h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .small-box h1 {
+    display: block;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .small-box p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 25px;
+    color: #fff;
+  }
+  .small-box .icon {
+    position: relative;
+    left: 75%;
+    font-size: 80px;
+    color: rgba(0,0,0,.15);
+    bottom: 145px;
+    font-size: 90px;
+  }
+  .bg-reg{
+    color: #fff;
+    background-color: #e6b012!important;
+  }
+  .demo-inline-calendar-card {
+    width: 300px;
+  }
+  .col-md-6 .col-sm-12{
+      position: relative;
+      min-height: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .col-lg-3 {
+    width: 100%;
+    position: relative;
+    min-height: 600px;
+    padding-left: 90px;
+    padding-right: 1px;
+    max-width: 100%;
+  }
+  .dark-brown[_ngcontent-jbo-c8] {
+    background-color: #013b92;
+    color: #fff;
+    width: 60%;
+    border-radius: 0.28rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  }
+  .widget.panel {
+    overflow: hidden;
+  }
+  .widget {
+    margin-bottom: 20px;
+    border: 0;
+  }
+  .row {
+    display: flex!important;
+    width: 100%;
+    flex-wrap:nowrap;
+    margin-left: -19px;
+    margin-right: -19px;
+    height: 126px;
+    border-radius: 0.50rem;
+      
+  }
+  .brown[_ngcontent-jbo-c8] {
+    background-color: #ce1127;
+    color: #fff;
+    width: 25%;
+  }
+  .row-table>[class*=col-] {
+    display: table-cell;
+    float: none;
+    table-layout: fixed;
+    vertical-align: middle;
+  }
+  .text-sm {
+    font-size: 20px;
+  }
+  .pv-lg {
+    padding-bottom: 15px!important;
+    padding-top: 15px!important;
+  }
+  .col-xs-4 {
+    width: 15%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .text-center {
+    text-align: center!important;
+  }
+  .col-xs-8 {
+    width: 40%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mt0 {
+    margin-top: 0!important;
+  }
+  [now] {
+    display: inline-block;
+  }
+  .h2 {
+    font-size: 30px;
+    margin-bottom: 10.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+    color: inherit;
+  }
+  .text-uppercase {
+    text-transform: uppercase!important;
+    font-size: 20px;
+  }
+  .text-muted {
+    color: #82888d!important;
+  }
+  .row:after {
+    clear: both;
+    content: " ";
+    display: flex;
+  }
+  .icon-cal{
+    position: relative;
+    left: 9%;
+    font-size: 90px;
+    color: rgba(0,0,0,.15);
+    bottom: 10px;
+  }
+  .demo-inline-calendar-card {
+    position: relative;
+    left: 67%;
+    width: 495px;
+    border-radius: 0.28rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    margin-top: 5%;
+  }
+  .row2
+  {
+    margin-left: 20px;
+  }
+  

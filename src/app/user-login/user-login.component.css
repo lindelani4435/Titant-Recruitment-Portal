@@ -1,0 +1,82 @@
+/* 
+@media (min-width:1281px){
+    body {font-family: Arial, Helvetica, sans-serif;
+      background-size: cover;
+      background-position: center;
+      height: 120vh;
+      width: 100%;
+  
+    }
+  
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  
+    }
+    .container h1{
+        text-align: left;
+        margin-bottom: 24px;
+        color: goldenrod;
+    }
+  
+    button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 34px;
+        border: none;
+        outline: none;
+        background:#ff0000;;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: white;
+        border-radius: 4px;
+  
+    }
+  
+    button:hover {
+      background: #c40101;
+    }
+  
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+  
+    img {
+      width: 8%;
+    }
+  
+    .container {
+       height: 40%;
+       width: 40%;
+        padding: 120px;
+        background: rgba(0, 60, 139, 0.904);
+        border-radius: 4px;
+        box-shadow: 0 8px 16px;
+        margin:auto;
+        width: 600px;
+        max-width: 90%;
+        box-shadow: 0 8px 16px rgba(218, 159, 32, 0.897);
+        color: white;
+    }
+  
+    span.psw {
+      float: right;
+      padding-top: 5px;
+    }
+
+    .alert
+    {
+      color: rgb(245, 17, 17);
+      align-items: center;
+      margin-left: 5px;
+    }
+    
+  }
+   */

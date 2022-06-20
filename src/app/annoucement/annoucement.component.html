@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section class ="theMain">
+    <app-sidebar></app-sidebar>
+    <mat-card class='my-5 mat-elevation-z5 p-0'>
+
+      <mat-card-header class="mat-card-header">
+          <mat-card-title class="p-2" *ngIf='!editMode'>ADD POST ON ANNOUNCEMENT</mat-card-title>
+
+      </mat-card-header>
+
+      <mat-divider></mat-divider>
+
+      <form #postForm="ngForm" (ngSubmit)="clickhandle() "  >
+          <mat-card-content class="p-3">
+
+            <p>Title</p>
+          <input name="title" type='text' matInput placeholder="Post Title" required [(ngModel)]="title" >
+
+          <p>Date</p>
+          <input  type="date" class="date" placeholder="Enter date" required   [(ngModel)]="date" id="dates" name="dates">
+
+          <ckeditor [(ngModel)]="post.body" [disabled]="readonly"        
+          id="body"
+          name="body"
+          type="divarea"
+          [config]="{ toolbar:  'full' } " 
+          >
+            
+          </ckeditor>
+
+          </mat-card-content>
+
+          <mat-divider></mat-divider>
+
+          <button mat-raised-button type="submit" class="m-2" color="#ff0000" *ngIf='!editMode'>POST</button>
+
+
+      </form>
+    </mat-card>
+  </section>
+
+</body>
+</html>
+

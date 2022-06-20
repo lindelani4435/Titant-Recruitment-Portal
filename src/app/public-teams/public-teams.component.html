@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <title>TVH Webpage</title>
+</head>
+<body>
+  <section class="menu">
+    <nav class="thenav" >
+      <a href=""><img src="../assets/tut-logo.png"></a>
+      <h1>Tshwane varsity hackathon 2022</h1>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+       <i class="las la-bars"></i>
+     </label>
+      <div class="nav-links">
+
+        <ul >
+          <li><a href="">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="rules">Rules</a></li>
+          <li><a href="public-annoucement">Announcements</a></li>
+          <li><a href="public-gallery">Gallery</a></li>
+          <li><a href="rewards">Rewards</a></li>
+          <li><a href="public-teams">Team</a></li>
+
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+  <section class="main">
+    <div >
+      <h2>Lead Organising Team</h2>
+    </div>
+    <div class="row">
+      <div class="box" *ngFor="let us of oganizer">
+        <img  [src]="us.file">
+          <h1 class="heading">{{us.name}} {{us.surname}}</h1>
+          <p>{{us.occupation}}</p>
+          <p>
+            {{us.description}}
+          </p>
+
+      </div>
+
+  </div>
+  <div >
+    <h2>industry Volunteers</h2>
+  </div>
+  <div class="row1">
+    <div class="box1" *ngFor="let us of volunteer">
+      <img [src]="us.file">
+        <h1 class="heading">{{us.name}} {{us.surname}}</h1>
+        <p>{{us.occupation}}</p>
+        <p>
+          {{us.description}}
+        </p>
+
+    </div>
+
+</div>
+<h2>Organising Team</h2>
+<div class="row2">
+  <div class="box2" *ngFor="let us of orgteam" >
+    <img [src]="us.file">
+      <h1 class="heading">{{us.name}} {{us.surname}}</h1>
+      <p>{{us.occupation}}</p>
+      <p>
+
+        {{us.description}}
+      </p>
+
+  </div>
+  
+</div>
+
+<h2>Mentors</h2>
+<div class="row2">
+  <div class="box2" *ngFor="let us of mentor" >
+    <img [src]="us.file">
+      <h1 class="heading">{{us.name}} {{us.surname}}</h1>
+      <p>{{us.occupation}}</p>
+      <p>
+
+        {{us.description}}                                                                                                                                                                                                                                                                                                                                                                        
+      </p>
+
+  </div>
+  
+</div>
+  </section>
+  <app-footer></app-footer>
+</body>
+</html>
