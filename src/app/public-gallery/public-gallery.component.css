@@ -24,9 +24,9 @@
     padding: 8px 12px;
 
 }
-   .thenav img{
-  width: 35px;
-  margin-left: 1px;
+.thenav img{
+  width: 80px;
+  margin-left: -18px;
   margin-top: 2px;
 }
 .thenav h1{
@@ -35,7 +35,7 @@
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .nav-links ul li{
@@ -326,7 +326,7 @@ p{
 
 }
 .thenav img{
-  width: 60px;
+  width: 110px;
   margin-left: 1px;
   margin-top: 5px;
 }
@@ -344,11 +344,11 @@ p{
 }
 .thenav h1{
   color: #003782;
-  margin-top: 15px;
+  margin-top: 12px;
   position: relative;
   font-size: 16px;
   font-weight: bold;
-  left: 1%;
+  left: -1%;
 }
 .nav-links ul li a{
     text-decoration: none;
@@ -365,7 +365,7 @@ p{
 }
 .main{
   width: 100%;
-  height: 440vh;
+  height: 540vh;
   background: linear-gradient(rgba(10, 0, 102, 0.8),rgba(255, 0, 0, 0.5)),url(annouce-pic.jpg);
   background-position: center;
   background-size: cover;
@@ -388,7 +388,7 @@ iframe{
   position: relative;
   transform: translate(-50%,-50%);
   left: 50%;
-  top: 8%;
+  top: 5%;
 }
 p{
   text-align: center;
@@ -483,8 +483,8 @@ p{
 
 }
 .thenav img{
-  width: 70px;
-  margin-left: -140px;
+  width: 130px;
+  margin-left: -160px;
   margin-top: 5px;
 }
 .nav-links ul{
@@ -501,10 +501,11 @@ p{
 }
 .thenav h1{
   color: #003782;
-  margin-top: 15px;
+  margin-top: 25px;
+  font-size: 20px;
   position: relative;
   font-weight: bold;
-  left: -6%;
+  left: -4%;
 }
 .nav-links ul li a{
     text-decoration: none;
@@ -695,8 +696,8 @@ p{
 
 }
 .thenav img{
-  width: 72px;
-  margin-left: -170px;
+  width: 160px;
+  margin-left: -200px;
   margin-top: 5px;
 }
 .nav-links ul{
@@ -713,9 +714,9 @@ p{
 }
 .thenav h1{
   color: #003782;
-  margin-top: 15px;
+  margin-top: 32px;
   position: relative;
-  left: -6%;
+  left: -5%;
   font-weight: bold;
   font-size: 24px;
 }
@@ -854,9 +855,12 @@ p{
   
   }
   .thenav img{
-    width: 100px;
-    margin-left: -430px;
+    width: 160px;
+    margin-left: -485px;
     margin-top: 5px;
+    filter: brightness(1);
+    filter: contrast(1.75);
+    filter: blur(-5);
   }
   .thenav ul{
       display: flex;
@@ -872,9 +876,9 @@ p{
   }
   .thenav h1{
     color: #003782;
-    margin-top: 15px;
+    margin-top: 32px;
     position: relative;
-    left: -15%;
+    left: -16%;
     font-size: 35px;
   }
   .nav-links ul li a{
@@ -892,7 +896,7 @@ p{
   }
   .main{
     width: 100%;
-    height: 330vh;
+    height: 500vh;
     background: linear-gradient(rgba(10, 0, 102, 0.8),rgba(255, 0, 0, 0.5)),url(annouce-pic.jpg);
     background-position: center;
     background-size: cover;
@@ -915,7 +919,7 @@ p{
     position: relative;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 15%;
+    top: 12%;
   }
   p{
     text-align: center;

@@ -112,8 +112,6 @@ export class RegistrationFormComponent implements OnInit {
  
  
 
-  // showMe:boolean = true
-
   ngOnInit(): void {
 
 
@@ -135,15 +133,6 @@ export class RegistrationFormComponent implements OnInit {
       
     })
   }
-  // theMenu()
-  // {
-  //   this.showMe=!this.showMe
-  // }
-  // title ='sweetalert2';
-  // alertWithSuccess(){
-  //   Swal.fire("Thank you... ", 'Your application was successfully submitted ','success')
-  // }
-
 
 
   

@@ -1,21 +1,37 @@
+.sidenav-container{
+  overflow: hidden;
+}
 .sidenav {
   width: 200px;
   background: #013b92;
+  overflow: hidden;
 }
-
 .sidenav .mat-toolbar {
   background: inherit;
   color:#fff;
-
 }
-
 .mat-toolbar.mat-primary {
   position: sticky;
-  height: 17vh;
+  height: 11vh;
   top: 0;
+  z-index: 1;
+  background: #013b92;
+}
+a .active{
+  background: #ff0000;
+}
+.mat-list-item{
+  color: #fff;
+  font-size: 15px;
+  transition: 1s;
+}
+.mat-list-item:hover{
+ color: #fff;
+ background: #001a41;
+ font-size: 15px;
+ box-shadow: 0 0 7px #001a41,0 0 7px #001a41;
 }
 h1{
-
   margin: 50px;
 }
 span{

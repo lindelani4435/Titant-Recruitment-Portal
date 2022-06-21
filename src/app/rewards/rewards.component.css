@@ -24,9 +24,9 @@
     padding: 8px 12px;
 
 }
-   .thenav img{
-  width: 35px;
-  margin-left: 1px;
+.thenav img{
+  width: 80px;
+  margin-left: -18px;
   margin-top: 2px;
 }
 .thenav h1{
@@ -35,7 +35,7 @@
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .nav-links ul li{
@@ -256,7 +256,7 @@
   
   }
   .thenav img{
-    width: 60px;
+    width: 110px;
     margin-left: 1px;
     margin-top: 5px;
   }
@@ -274,11 +274,11 @@
   }
   .thenav h1{
     color: #003782;
-    margin-top: 15px;
+    margin-top: 12px;
     position: relative;
     font-size: 16px;
     font-weight: bold;
-    left: 1%;
+    left: -1%;
   }
   .nav-links ul li a{
       text-decoration: none;
@@ -396,9 +396,9 @@
       top: 0;
   
   }
-  nav img{
-    width: 70px;
-    margin-left: -140px;
+  .thenav img{
+    width: 130px;
+    margin-left: -160px;
     margin-top: 5px;
   }
   .nav-links ul{
@@ -413,11 +413,13 @@
       right: -28%;
   
   }
-  .nav-links h1{
+  .thenav h1{
     color: #003782;
-    margin-top: 15px;
+    margin-top: 25px;
+    font-size: 20px;
     position: relative;
-    left: -6%;
+    font-weight: bold;
+    left: -4%;
   }
   .nav-links ul li a{
       text-decoration: none;
@@ -510,8 +512,8 @@
   
   }
   .thenav img{
-    width: 72px;
-    margin-left: -170px;
+    width: 160px;
+    margin-left: -200px;
     margin-top: 5px;
   }
   .nav-links ul{
@@ -528,9 +530,9 @@
   }
   .thenav h1{
     color: #003782;
-    margin-top: 15px;
+    margin-top: 32px;
     position: relative;
-    left: -6%;
+    left: -5%;
     font-weight: bold;
     font-size: 24px;
   }
@@ -654,9 +656,12 @@
     
     }
     .thenav img{
-      width: 100px;
-      margin-left: -430px;
+      width: 160px;
+      margin-left: -485px;
       margin-top: 5px;
+      filter: brightness(1);
+      filter: contrast(1.75);
+      filter: blur(-5);
     }
     .thenav ul{
         display: flex;
@@ -672,9 +677,9 @@
     }
     .thenav h1{
       color: #003782;
-      margin-top: 15px;
+      margin-top: 32px;
       position: relative;
-      left: -15%;
+      left: -16%;
       font-size: 35px;
     }
     .nav-links ul li a{

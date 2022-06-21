@@ -1,9 +1,31 @@
 
 <app-sidebar></app-sidebar>
-<form class="reward">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+<form class="reward" #regForm="ngForm" [formGroup]="rewardForm"   (ngSubmit)="clickhandle()" >
+  <label for="fname">Reward type:</label><br>
+
+  <input type="text" formControlName="bod"    id="bod" name="bod" required [(ngModel)]="bod"  namesControl="ngModel"><br>
+
+                <!---error message-->
+                <div *ngIf="bodss.invalid && (bodss.touched || bodss.dirty)" >
+                  <span class="alert" *ngIf="submitted && bodss.errors?.required">*Reward type is required</span>
+                  <span class="alert" *ngIf="bodss.errors?.pattern">*Enter only characters</span>
+
+               </div>
+  <br>
+
+  
+
+    <input type="file" formControlName="fil"  (change)="uploadsss($event)"  id="file" name="file" namesControl="ngModel" >
+
+    <!---error message-->
+    <div *ngIf="filee.invalid && (filee.touched || filee.dirty)" >
+      <span class="alert" *ngIf="submitted && filee.errors?.required">*File is required</span>
+      
+
+   </div>
+
+
+
+  <br>
   <button>SUBMIT</button>
 </form>

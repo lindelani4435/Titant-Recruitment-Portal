@@ -12,7 +12,8 @@ import Swal from 'sweetalert2';
 })
 export class PostComponent implements OnInit {
 
-  
+
+  submitted: boolean = false;
   editMode: boolean = false;
   private postId: string | undefined;
   public readonly:boolean = true;
@@ -20,6 +21,15 @@ export class PostComponent implements OnInit {
   constructor(private service:ApiserviceService, public route: ActivatedRoute, private router: Router, private formBuilder : FormBuilder) { }
 
   ngOnInit(): void {
+
+
+    this.rewardForm = new FormGroup({
+
+      "bod": new FormControl(null, [Validators.required, Validators.pattern('[a-zA-z]*')]),
+      "fil": new FormControl(null, [Validators.required])
+
+      
+    })
 
     this.route.paramMap.subscribe((paramMap: ParamMap) => {
       if (paramMap.has('id')) { // the id passed in paramMap.has('id') has to be same as it define in routing module.
@@ -33,27 +43,34 @@ export class PostComponent implements OnInit {
       }
     });
 
-    CKEDITOR.replace( 'ckeditorContent', {
-      fullPage: true,
-      extraPlugins: 'font,panelbutton,colorbutton,colordialog,justify,indentblock,aparat,buyLink',
-      // You may want to disable content filtering because if you use full page mode, you probably
-      // want to  freely enter any HTML content in source mode without any limitations.
-      allowedContent: true,
-      autoGrow_onStartup: true,
-      enterMode: CKEDITOR.ENTER_P
+  //   CKEDITOR.replace( 'ckeditorContent', {
+  //     fullPage: true,
+  //     extraPlugins: 'font,panelbutton,colorbutton,colordialog,justify,indentblock,aparat,buyLink',
+  //     // You may want to disable content filtering because if you use full page mode, you probably
+  //     // want to  freely enter any HTML content in source mode without any limitations.
+  //     allowedContent: true,
+  //     autoGrow_onStartup: true,
+  //     enterMode: CKEDITOR.ENTER_P
       
      
     
       
       
       
-  } );
+  // } );
 
   }
 
-  rewardForm !: FormGroup;
+  myform !: FormGroup;
+
+  rewardForm:any;
 
   public file:string =''
+
+
+  get bodss(){return this.rewardForm.get('bod');}
+  get filee(){return this.rewardForm.get('fil');}
+
 
   uploadsss(event: any)
   {
@@ -63,100 +80,91 @@ export class PostComponent implements OnInit {
   }
 
 
-  ckeditorContent:any;
-  
+  public bod:string= ' ';
 
-  public post = {
-    title: '',
-    body: ''
-  
-  };
-
-
-  public title:string ='';
-  public body:string= ' ';
-  public date:string ='';
-  public message:string ='';
 
   clickhandle()
 {
 
-  // if(this.rewardsForm.invalid)
-  // {
-  //     console.log("invalid");
-
-  // }
-  // else
-  // {
-  //   console.log("valid");
-  // }
+  this.submitted = true;
 
   console.log(this.file)
-  console.log(this.body)
+  console.log(this.bod)
 
-
-
-let formData = new FormData()
-  formData.append("picturePath",this.file)
-  formData.append("topic",this.body)
-
-
-
-this.service.getUploadRewards(formData).subscribe((res)=>{
-
-  console.log(formData);
-
-  console.log(formData);
-
-  if(res.message =="Unsupported extension")
+  if(this.rewardForm.invalid)
   {
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'File not suppotted!',
-    
-    })
-
-
+    console.log("Invalid");
   }
-  else if( res.message =="File must be less than 5MB" )
-  {
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'File must be less than 5MB!',
-    
-    })
-  }
-  else if(res.message =="Rewards updated successfully")
-  {
+  else{
 
-    Swal.fire({
-    
-      icon: 'success',
-      title: 'Rewards updated successfully!',
-      showConfirmButton: false,
-      timer: 2500
-    })
-     this.rewardForm.reset();
+    console.log("Valid");
+
+
+    let formData = new FormData()
+    formData.append("picturePath",this.file)
+    formData.append("topic",this.bod)
   
-    // this.dialog.closeAll();
   
+  
+  this.service.getUploadRewards(formData).subscribe((res)=>{
+  
+    console.log(formData);
+  
+    console.log(formData);
+  
+    if(res.message =="Unsupported extension")
+    {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'File not suppotted!',
+      
+      })
+  
+  
+    }
+    else if( res.message =="File must be less than 5MB" )
+    {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'File must be less than 5MB!',
+      
+      })
+    }
+    else if(res.message =="Rewards updated successfully")
+    {
+  
+      Swal.fire({
+      
+        icon: 'success',
+        title: 'Rewards updated successfully!',
+        showConfirmButton: false,
+        timer: 2500
+      })
+       this.rewardForm.reset();
     
-  }else
-  {
-
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'An error occured!',
+      // this.dialog.closeAll();
     
-    })
-
+      
+    }else
+    {
+  
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'An error occured!',
+      
+      })
+  
+    }
+  
+  
+  })
+    
   }
 
 
-})
 
 }
 

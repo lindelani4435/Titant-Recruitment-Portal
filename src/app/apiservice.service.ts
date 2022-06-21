@@ -154,6 +154,7 @@ export class ApiserviceService {
 
     getUploadRewards(credintials:any)
     {
+
       return this._http.post<any>(this.rewardsUrl, credintials );
     }
 

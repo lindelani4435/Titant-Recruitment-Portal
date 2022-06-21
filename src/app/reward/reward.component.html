@@ -1,2 +1,56 @@
-<app-sidebar></app-sidebar>
-<p>reward works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVH WEBSITE</title>
+
+</head>
+<body>
+  <section>
+  <nav class="thenav" >
+
+    <div class="nav-links"*ngIf="showMe">
+
+      <a href=""><img src="../assets/tut-logo.png"></a>
+       <h1>Tshwane varsity hackathon 2022</h1>
+      <ul >
+        <li><a href="">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="public-annoucement">Announcements</a></li>
+        <li><a href="public-gallery">Gallery</a></li>
+        <li><a href="reward">Prizes</a></li>
+        <li><a href="public-teams">Team</a></li>
+
+      </ul>
+
+    </div>
+    <i class="las la-bars" (click)="theMenu()"></i>
+  </nav>
+</section>
+<section>
+  <div class="the-main">
+
+  </div>
+</section>
+<section>
+  <div class="hori-line"></div>
+</section>
+<section>
+  <div class="hori-line1"></div>
+</section>
+<section>
+  <div class="the-head">
+    <h1>Stand a chance to win <br><br>
+      great prizes!</h1>
+  </div>
+</section>
+ <section>
+   <p>Cash prize, Gadgets and More !</p>
+ </section>
+ <section class="click">
+  <p>CLICK, CONNECT, HACK</p>
+ </section>
+<app-footer></app-footer>
+</body>
+</html>
