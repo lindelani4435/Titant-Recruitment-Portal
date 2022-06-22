@@ -18,45 +18,45 @@ export class ApiserviceService {
 
   ////connection for frontend and backend
 
-    apiUrl = 'http://localhost:9002/login'; //Adminlogin
+    apiUrl = 'https://tvh20211.herokuapp.com/login'; //Adminlogin
 
-    apeUrl = 'http://localhost:9002/registrations'; ///userFormRegistration
+    apeUrl = 'https://tvh20211.herokuapp.com/registrations'; ///userFormRegistration
 
-    apqUrl = 'http://localhost:9002/adminLoadFile'; //admin View Data From Database
-
-
-    apwUrl = 'http://localhost:9002/noticeLoadFile'; //Notice display Data From Database
-    appUrl = 'http://localhost:9002/countApp'; //Apllication counts 
-    teamsUrl = 'http://localhost:9002/countTeam'; //Team counts 
-    orgUrl = 'http://localhost:9002/selectOrganiser'; //Teams display Data From Database
-    volUrl = 'http://localhost:9002/selectVolunteer'; //Volunteer display Data From Database
-    mentUrl = 'http://localhost:9002/selectMentor'; //Mentor display Data From Database
-    orgTeUrl = 'http://localhost:9002/selectOrgTeam'; //OrgTeam display Data From Database
-    teamUrl = 'http://localhost:9002/selectTeam'; //Team display Data From Database
+    apqUrl = 'https://tvh20211.herokuapp.com/adminLoadFile'; //admin View Data From Database
 
 
-    apaUrl = 'http://localhost:9002/signUp'; /// Signup for users
-
-    apkUrl = 'http://localhost:9002/userLogin'; /// Users login
-
-    apmUrl = 'http://localhost:9002/notice'; /// announcement
-
-    uploadUrl = 'http://localhost:9002/uploadTeam '; ///uploadTeams
-    rewardsUrl = 'http://localhost:9002/uploadRewards '; ///uploadRewards
-    deletUrl = 'http://localhost:9002/deleteMember'; ///DeleteTeams
-    delantUrl = 'http://localhost:9002/deleteAnnouncement'; ///DeleteAnnouncement
-    specTeaUrl = 'http://localhost:9002/viewTeamMember'; ///select specific team using id 
+    apwUrl = 'https://tvh20211.herokuapp.com/noticeLoadFile'; //Notice display Data From Database
+    appUrl = 'https://tvh20211.herokuapp.com/countApp'; //Apllication counts
+    teamsUrl = 'https://tvh20211.herokuapp.com/countTeam'; //Team counts
+    orgUrl = 'https://tvh20211.herokuapp.com/selectOrganiser'; //Teams display Data From Database
+    volUrl = 'https://tvh20211.herokuapp.com/selectVolunteer'; //Volunteer display Data From Database
+    mentUrl = 'https://tvh20211.herokuapp.com/selectMentor'; //Mentor display Data From Database
+    orgTeUrl = 'https://tvh20211.herokuapp.com/selectOrgTeam'; //OrgTeam display Data From Database
+    teamUrl = 'https://tvh20211.herokuapp.com/selectTeam'; //Team display Data From Database
 
 
+    apaUrl = 'https://tvh20211.herokuapp.com/signUp'; /// Signup for users
 
-    
+    apkUrl = 'https://tvh20211.herokuapp.com/userLogin'; /// Users login
+
+    apmUrl = 'https://tvh20211.herokuapp.com/notice'; /// announcement
+
+    uploadUrl = 'https://tvh20211.herokuapp.com/uploadTeam '; ///uploadTeams
+    rewardsUrl = 'https://tvh20211.herokuapp.com/uploadRewards '; ///uploadRewards
+    deletUrl = 'https://tvh20211.herokuapp.com/deleteMember'; ///DeleteTeams
+    delantUrl = 'https://tvh20211.herokuapp.com/deleteAnnouncement'; ///DeleteAnnouncement
+    specTeaUrl = 'https://tvh20211.herokuapp.com/viewTeamMember'; ///select specific team using id
+
+
+
+
 
     ///get data post admin data to the database from login
     getAllData(credintials : any)
     {
       return this._http.post<any>(this.apiUrl, credintials);
 
-      
+
     }
 
     //get data from frontend store it to the database
@@ -133,7 +133,7 @@ export class ApiserviceService {
     {
       return this._http.post<any>(this.apkUrl, credintials);
 
-      
+
     }
 
     //Get announcement data from admin store it to the database
@@ -172,13 +172,13 @@ export class ApiserviceService {
     {
       let ids = id;
       return this._http.delete(`${this.delantUrl}/${ids}`);
-    } 
+    }
 
 
     //select specific team
     getSpecTeam(id:any):Observable<any>
     {
-        
+
           return this._http.get<any>(`${this.specTeaUrl}/${id}`);
     }
 }
